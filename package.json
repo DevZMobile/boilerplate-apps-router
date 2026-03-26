@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "test": "jest --maxWorkers=50%",
+    "test": "jest --maxWorkers=50% --passWithNoTests",
     "test:watch": "jest --watch --maxWorkers=25%",
     "test:ci": "jest --runInBand",
     "start": "next start",
@@ -15,7 +15,8 @@
   "dependencies": {
     "next": "16.2.1",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "styled-components": "^6.3.12"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
@@ -31,6 +32,7 @@
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
     "lint-staged": "^16.4.0",
+    "prettier": "^3.8.1",
     "typescript": "^5"
   }
 }
