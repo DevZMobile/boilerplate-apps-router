@@ -6,10 +6,10 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout Repository
-        users: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Setup Node
-        users: actions/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 22.x
           cache: "npm"
