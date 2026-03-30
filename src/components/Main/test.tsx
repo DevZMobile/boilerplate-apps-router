@@ -7,7 +7,7 @@ describe("<Main />", () => {
     const { container } = render(<Main />);
     // busca o elemento e verifica a existencia
     expect(
-      screen.getByRole("heading", { name: /react avançado/i }),
+      screen.getByRole("heading", { name: /React Avançado/i }),
     ).toBeInTheDocument();
 
     //Gerar snapshot
