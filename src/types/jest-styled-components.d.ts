@@ -10,7 +10,12 @@ declare global {
   namespace jest {
     interface AsymmetricMatcher {
       $$typeof: symbol;
-      sample?: string | RegExp | object | Array<any> | Function;
+      sample?:
+        | string
+        | RegExp
+        | object
+        | Array<any>
+        | ((...args: unknown[]) => unknown);
     }
 
     type Value = string | number | RegExp | AsymmetricMatcher | undefined;
