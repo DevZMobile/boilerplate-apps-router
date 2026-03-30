@@ -5,7 +5,6 @@ import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
 
-const teste = "x";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
@@ -16,8 +15,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "generators/**",
   ]),
-  ...storybook.configs["flat/recommended"]
+  ...storybook.configs["flat/recommended"],
 ]);
 
 export default eslintConfig;
