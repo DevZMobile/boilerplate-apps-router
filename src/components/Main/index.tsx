@@ -1,7 +1,7 @@
 import * as S from "./syles";
 
 const Main = ({
-  title = "React Avançado",
+  title = "React",
   description = "TypeScript, ReactJS, NextJS e Styled Components",
 }) => (
   <S.Wrapper>
