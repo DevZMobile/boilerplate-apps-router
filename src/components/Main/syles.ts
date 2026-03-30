@@ -20,7 +20,7 @@ export const Logo = styled.img`
   margin-bottom: 2rem;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h3`
   font-size: 2.5rem;
 `;
 
